@@ -201,6 +201,36 @@ export default function Home() {
             <FAQ questions={faqs} />
           </div>
 
+
+          <div className="mb-10">
+            <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">Personal Injury Settlement Calculator by State</h2>
+            <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+              State comparative fault rules, statutes of limitations, and insurance requirements significantly affect personal injury settlement values. Select your state for a calculator pre-set with your state&apos;s specific rules.
+            </p>
+            <div className="flex flex-wrap gap-2">
+              {[
+                {slug:'alabama',name:'Alabama'},{slug:'alaska',name:'Alaska'},{slug:'arizona',name:'Arizona'},{slug:'arkansas',name:'Arkansas'},
+                {slug:'california',name:'California'},{slug:'colorado',name:'Colorado'},{slug:'connecticut',name:'Connecticut'},{slug:'delaware',name:'Delaware'},
+                {slug:'florida',name:'Florida'},{slug:'georgia',name:'Georgia'},{slug:'hawaii',name:'Hawaii'},{slug:'idaho',name:'Idaho'},
+                {slug:'illinois',name:'Illinois'},{slug:'indiana',name:'Indiana'},{slug:'iowa',name:'Iowa'},{slug:'kansas',name:'Kansas'},
+                {slug:'kentucky',name:'Kentucky'},{slug:'louisiana',name:'Louisiana'},{slug:'maine',name:'Maine'},{slug:'maryland',name:'Maryland'},
+                {slug:'massachusetts',name:'Massachusetts'},{slug:'michigan',name:'Michigan'},{slug:'minnesota',name:'Minnesota'},{slug:'mississippi',name:'Mississippi'},
+                {slug:'missouri',name:'Missouri'},{slug:'montana',name:'Montana'},{slug:'nebraska',name:'Nebraska'},{slug:'nevada',name:'Nevada'},
+                {slug:'new-hampshire',name:'New Hampshire'},{slug:'new-jersey',name:'New Jersey'},{slug:'new-mexico',name:'New Mexico'},{slug:'new-york',name:'New York'},
+                {slug:'north-carolina',name:'North Carolina'},{slug:'north-dakota',name:'North Dakota'},{slug:'ohio',name:'Ohio'},{slug:'oklahoma',name:'Oklahoma'},
+                {slug:'oregon',name:'Oregon'},{slug:'pennsylvania',name:'Pennsylvania'},{slug:'rhode-island',name:'Rhode Island'},{slug:'south-carolina',name:'South Carolina'},
+                {slug:'south-dakota',name:'South Dakota'},{slug:'tennessee',name:'Tennessee'},{slug:'texas',name:'Texas'},{slug:'utah',name:'Utah'},
+                {slug:'vermont',name:'Vermont'},{slug:'virginia',name:'Virginia'},{slug:'washington',name:'Washington'},{slug:'west-virginia',name:'West Virginia'},
+                {slug:'wisconsin',name:'Wisconsin'},{slug:'wyoming',name:'Wyoming'},
+              ].map(({slug, name}) => (
+                <a key={slug} href={`/${slug}-personal-injury-settlement`}
+                  className="text-xs px-3 py-1.5 rounded-full border border-gray-200 dark:border-gray-700 text-gray-700 dark:text-gray-300 hover:bg-[#1e293b] hover:text-white hover:border-[#1e293b] transition-colors">
+                  {name}
+                </a>
+              ))}
+            </div>
+          </div>
+
           <div className="pb-6">
             <AdBanner slot="3333333333" />
           </div>

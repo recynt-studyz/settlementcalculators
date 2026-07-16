@@ -8,7 +8,7 @@ const inter = Inter({ variable: '--font-inter', subsets: ['latin'] })
 export const metadata: Metadata = {
   title: 'Settlement Calculators 2026 — Free Legal Settlement Estimates',
   description:
-    'Free settlement calculators for personal injury, car accidents, workers comp, medical malpractice, wrongful termination, divorce and debt. Estimates for all 50 states. Updated 2026.',
+    'Free settlement calculators for injury, car accidents, workers comp, slip & fall, malpractice, wrongful termination, divorce, and debt. All 50 states. 2026.',
   keywords: [
     'personal injury settlement calculator',
     'car accident settlement calculator',
